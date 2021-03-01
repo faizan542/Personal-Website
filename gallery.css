@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgba(230, 247, 243),rgba(222, 234, 255));
+}
+/* Navbar Styling */
+
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px 0;
+    transition: all 0.3 ease;
+    background: rgba(0, 0, 0,0.3);
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar .sticky{
+    padding: 10px 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-list{
+    display: inline-flex;
+}
+
+.menu-list li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+    color: cyan;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute; 
+    right: 30px;
+    top: 20px;
+}
+nav .menu-list .second-child:first-child{
+    color: #4113bf;
+}
+
+@media (max-width: 520px){
+    .navbar .logo{
+        font-size: 13px;
+        transition: all 0.3s ease;
+    }
+
+    body.disabledScroll{
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+   .icon.hide{
+       display: none;
+   }
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* height: 100vh; */
+        width: 100%;
+        max-width: 400px;
+        background:rgba(0,0,0,0.3);
+        display: block;
+        padding: 40px 0px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+        font-size: 23px;
+    }
+}
+
+/* BODY STYLING */
+h1{
+    margin-left: 25px;
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 100;
+    transition: all 0.3s ease;
+}
+
+
+.images{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+img{
+    max-width: 70%;
+    transition: all 0.3s ease;
+}
+
+.explain{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    max-width: 70%;
+    transition: all 0.3s ease;
+}
+.para{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 32px;
+        transition: all 0.3s ease;
+    }
+    
+    img{
+        max-width: 100%;
+        margin-right: 0px;
+        margin-top: 0px;    
+        transition: all 0.3s ease;
+    }
+    .explain{
+        max-width: 100%;
+    transition: all 0.3s ease;
+    }
+
+    .para{
+        font-size: 17px;
+    transition: all 0.3s ease;
+}
+}
+
+@media (max-width:280px){
+    h1{
+        font-size: 22px;
+        transition: all 0.3s ease;
+    }
+
+    .explain{
+        max-width: 100%;
+    transition: all 0.3s ease;
+    }
+
+    .para{
+        font-size: 17px;
+    transition: all 0.3s ease;
+}
+}
+@media (max-width:180px){
+    h1{
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+
+    .explain{
+        max-width: 100%;
+    transition: all 0.3s ease;
+    }
+
+    .para{
+        font-size: 17px;
+    transition: all 0.3s ease;
+}
+}
